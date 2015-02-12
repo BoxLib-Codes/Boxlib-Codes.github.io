@@ -30,8 +30,9 @@
       <section>
         <h3>Welcome to BoxLib Codes</h3>
 
-	<p><code>BoxLib</code> is a C++/Fortran library for
-	  block-structured adaptive mesh refinement, developed at
+	<p><a href="https://ccse.lbl.gov/BoxLib/"><code>BoxLib</code></a>
+	  is a C++/Fortran library for block-structured adaptive mesh
+	  refinement, developed at
 	  the <a href="http://ccse.lbl.gov/">Center for Computational
 	  Sciences and Engineering</a> / Lawrence Berkeley National
 	  Laboratory.</p>
@@ -47,8 +48,27 @@
 
 	<h3>Maestro</h3>
 
-	<p>Maestro...</p>
+	<p>Maestro is a low Mach number hydrodynamics code for stellar
+	  flows.  Maestro solves a reformulation of the Euler
+	  equations that filters soundwaves from the system but
+	  retains the compressibility effects due to local heat
+	  release / diffusion, compositional mixing, and the
+	  background stratification of the stellar atmosphere.
+	  These effects are captured through an elliptic constraint
+	  on the velocity field.</p>
 
+	<p>The Maestro algorithm uses a second-order Godunov method
+	  to evolve the advective portion of the equations and an
+	  approximate projection to enforce the constraint on the
+	  velocity.  Reactions are incorporated via Strang splitting.</p>
+
+	<p>Maestro uses the Fortran 90 portion of <code>BoxLib</code>.</p>
+
+	<p>More information on Maestro can be found on
+	  its <a href="http://boxlib-codes.github.io/MAESTRO/algorithm/">project
+	  page</a>, and full details are given in
+	  the <a href="http://bender.astro.sunysb.edu/Maestro/staging/MAESTRO/Docs/MaestroUsersGuide.pdf">Maestro
+	  User's Guide</a>.
 	
 	<h3>Castro</h3>
 
@@ -59,6 +79,12 @@
 
 	<p>CastroRadiation...</p>
 
+
+	<h3>wdmerger</h3>
+
+	<p>wdmerger...</p>
+
+	
       </section>
       <footer>
         <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
