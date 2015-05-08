@@ -48,21 +48,23 @@
 
 	<h3>Maestro</h3>
 
-	<p>Maestro is a low Mach number hydrodynamics code for stellar
-	  flows.  Maestro solves a reformulation of the Euler
-	  equations that filters soundwaves from the system but
-	  retains the compressibility effects due to local heat
-	  release / diffusion, compositional mixing, and the
-	  background stratification of the stellar atmosphere.
-	  These effects are captured through an elliptic constraint
-	  on the velocity field.</p>
+	<p><a href="http://boxlib-codes/github.io/MAESTRO/">Maestro</a>
+	  is a low Mach number hydrodynamics code for stellar flows.
+	  Maestro solves a reformulation of the Euler equations that
+	  filters soundwaves from the system but retains the
+	  compressibility effects due to local heat release /
+	  diffusion, compositional mixing, and the background
+	  stratification of the stellar atmosphere.  These effects are
+	  captured through an elliptic constraint on the velocity
+	  field.</p>
 
 	<p>The Maestro algorithm uses a second-order Godunov method
 	  to evolve the advective portion of the equations and an
 	  approximate projection to enforce the constraint on the
 	  velocity.  Reactions are incorporated via Strang splitting.</p>
 
-	<p>Maestro uses the Fortran 90 portion of <code>BoxLib</code>.</p>
+	<p>Maestro uses the Fortran 90 portion of <code>BoxLib</code>
+	   to manage the grid structure and parallelism.</p>
 
 	<p>More information on Maestro can be found on
 	  its <a href="http://boxlib-codes.github.io/MAESTRO/algorithm/">project
@@ -72,7 +74,15 @@
 	
 	<h3>Castro</h3>
 
-	<p>Castro...</p>
+	<p><a href="http://boxlib-codes.github.io/Castro/"Castro</a> is
+	      a fully compressible adaptive mesh refinement radiation
+	      hydrodynamics code.  Castro uses an unsplit PPM algorithm
+	      for hydrodynamics, uses a general equation of state
+	      and reaction network, and solves self-gravity (the Poisson
+	      equation) via multigrid.</p>
+
+	<p>It uses the C++ BoxLib library to manage the grid structure
+	      and parallelism.</p>
 
 	
 	<h3>CastroRadiation</h3>
