@@ -37,14 +37,46 @@
 	  Sciences and Engineering</a> / Lawrence Berkeley National
 	  Laboratory.</p>
 
-	<p>This github organization hosts a number of simulation codes that use
+	<p>This <a href="https://github.com/BoxLib-Codes">github
+	organization</a> hosts a number of simulation codes that use
 	  <code>BoxLib</code> to manage their discretization and
 	  parallelization.  Descriptions to the codes and links to
 	  their github repos are given below.</p>
 
-	<p><code>BoxLib</code> itself can be obtained from its repo in
-          this github organization:
+	<p><code>BoxLib</code> itself can be obtained from its git repo:
 	<pre><code>$ git clone https://github.com/BoxLib-Codes/BoxLib.git</code></pre>
+
+
+	<h3>Contributing</h3>
+
+	<p>Contributions are welcomed through github's pull-request
+           system.  Note that all new development should be done on
+           the <tt>development</tt> branch for each code.  Once
+           accepted changes successfully pass our regression tests,
+           the development branch will be merged to <tt>master</tt>.</p>
+
+	
+	<h3>Castro</h3>
+
+	<p><a href="http://boxlib-codes.github.io/Castro/">Castro</a>
+	  is a fully compressible adaptive mesh refinement radiation
+	  hydrodynamics code.  Castro uses an unsplit PPM algorithm
+	  for hydrodynamics, uses a general equation of state and
+	  reaction network, and solves self-gravity (the Poisson
+	  equation) via multigrid.</p>
+
+	<p>It uses the C++ BoxLib library to manage the grid structure
+	      and parallelism.</p>
+
+	<p>More information on using Castro can be found in the 
+           <a href="http://bender.astro.sunysb.edu/Castro/staging/Castro/UsersGuide/CastroUserGuide.pdf">Castro User's Guide</a>.</p>
+
+	
+	<h3>CastroRadiation</h3>
+
+	<p>CastroRadiation provides the flux limited diffusion solver
+           support for the main Castro simulation code.  A gray and 
+           multigroup solver are implemented.</p>
 
 	<h3>Maestro</h3>
 
@@ -70,26 +102,23 @@
 	  its <a href="http://boxlib-codes.github.io/MAESTRO/algorithm/">project
 	  page</a>, and full details are given in
 	  the <a href="http://bender.astro.sunysb.edu/Maestro/staging/MAESTRO/Docs/MaestroUsersGuide.pdf">Maestro
-	  User's Guide</a>.
-	
-	<h3>Castro</h3>
+	  User's Guide</a>.</p>
 
-	<p><a href="http://boxlib-codes.github.io/Castro/">Castro</a>
-	      is a fully compressible adaptive mesh refinement
-	      radiation hydrodynamics code.  Castro uses an unsplit
-	      PPM algorithm for hydrodynamics, uses a general equation
-	      of state and reaction network, and solves self-gravity
-	      (the Poisson equation) via multigrid.</p>
 
-	<p>It uses the C++ BoxLib library to manage the grid structure
-	      and parallelism.</p>
+        <h3>Microphysics</h3>
 
-	
-	<h3>CastroRadiation</h3>
+        <p>Microphysics contains reaction networks, equations of
+	  state, and other physics routines that are written in a
+	  general fashion so that they can be used both by Maestro and
+	  Castro.</p>
 
-	<p>CastroRadiation provides the flux limited diffusion solver
-           support for the main Castro simulation code.  A gray and 
-           multigroup solver are implemented.</p>
+
+	<h3>Varden</h3>
+
+	<p>Varden is a adaptive mesh, variable-density incompressible
+	solver that uses a second-order approximate projection method.
+	It uses the Fortran BoxLib library to manage the grid.
+
 
 
 	<h3>wdmerger</h3>
